@@ -43,9 +43,6 @@
 	<a class="nav-link text-muted subheading" href="https://anr.fr/">ANR</a>
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">BIOM</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/BIOM-Logo-small.png" alt="">
-      </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -68,8 +65,7 @@
           <a class="nav-link js-scroll-trigger" href="#consortium">Consortium</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#phd">PhDs</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#phd">Thèses</a>
+          <a class="nav-link js-scroll-trigger" href="#ressources">Ressources</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
@@ -83,17 +79,18 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
+	  	<p align="center">
+		<img src="img/BIOM-Logo-small.png" alt="BIOM" style="height:140px;">
+		</p>
         <h1 class="mb-0">ANR
           <span class="text-primary">BIOM</span>
         </h1>
         <div class="subheading mb-5"> Building Inside/Outside Modeling </a>
         </div>
-        <p class="lead mb-5 lang-en"> TODO </p>
-        <p class="lead mb-5 lang-fr"> TODO </p>
+        <p class="lead mb-5 lang-en"> The Building Indoor & Outdoor Modelling (BIOM) project aims at automatic, simultaneous indoor and outdoor modelling of buildings from images and dense point clouds. We want to achieve a complete, geometrically accurate, semantically annotated but nonetheless lean 3D CAD representation of buildings and objects they contain in the form of a Building Information Models (BIM) that will help manage buildings in all their life cycle (renovation, simulation, deconstruction). We view indoor and outdoor building modelling as a joint process where both worlds fruitfully cooperate and benefit one another both in terms of semantics and geometry. The hope is that this holistic scene understanding and reconstruction approach will lead to more complete, correct, and geometrically accurate building models. </p>
+        <p class="lead mb-5 lang-fr"> Le projet Modelisation Intérieur/Extérieur de Bâtiments (BIOM) vise à la modélisation automatique et simultanée de l'intérieur et de l'extérieur de bâtiments à partir de données d'acquisition image et Lidar (nuages de points denses). L'objectif est d'atteindre une représentation 3D complète, précise, sémantisée et simple du bâtiments et des objets fixes qui en font partie (portes, fenêtres, balcons, tuyaux, radiateurs, ...) dans une représentation BIM (Building Information Model) qui permet de gérer tout le cycle de vie du bâtiment. La modélisation intérieur/extérieur est vue comme un processus conjoint où les deux aspect collaborent pour tirer partie de leurs complémentarités sémantiques et géométriques. Cette approche globale permettra une reconstruction plus complète, correcte, précise et cohérente des bâtiments. La première ambition du projet BIOM est d’intégrer des sources de données hétérogènes car la modélisation complète d’un bâtiment requiert des acquisition intérieures et extérieures aériennes et au niveau du sol. Le projet vise aussi à exploiter la complémentarité image/LiDAR et à gérer les occultations dues au mobilier intérieur et urbain. Enfin, une large variété de styles architecturaux, d’arrangements intérieurs et de nombreux types d’objets devront être gérés. </p>
+		
         <div class="social-icons">
-          <a href="#">
-            <i class="#"></i>
-          </a>
           <a href="#">
             <i class="ai ai-researchgate"></i>
           </a>
@@ -123,15 +120,90 @@
     </section>
 
     <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="topics">
+	
+		 <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="topics">
       <div class="w-100">
         <h2 class="mb-5 lang-en">Research Topics</h2>
         <h2 class="mb-5 lang-fr">Sujets de recherche</h2>
-        <hr class="star-dark mb-5">
-        <p> The Building Indoor & Outdoor Modelling (BIOM) project aims at automatic, simultaneous indoor and outdoor modelling of buildings from images and dense point clouds. We want to achieve a complete, geometrically accurate, semantically annotated but nonetheless lean 3D CAD representation of buildings and objects they contain in the form of a Building Information Models (BIM) that will help manage buildings in all their life cycle (renovation, simulation, deconstruction). We view indoor and outdoor building modelling as a joint process where both worlds fruitfully cooperate and benefit one another both in terms of semantics and geometry. The hope is that this holistic scene understanding and reconstruction approach will lead to more complete, correct, and geometrically accurate building models. </p>
-        </hr>
-      </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> WP1: Registration </h3>
+            <p> WP1 aims at addressing all registration issues faced by the BIOM project, as a major objective of the project is exploiting jointly data from various sensors (image/Lidar) and viewpoints (terrestrial indoor/outdoor, aerial). It is structured into the following subtasks: </p>
+			<ul>
+			<li> WP1.a Registration of outdoor heterogeneous data </li>
+			<li> WP1.b Registration of indoor data </li>
+			<li> WP1.c Indoor/Outdoor landmark extraction </li>
+			<li> WP1.d Global indoor/outdoor registration </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Coordination: Pascal Monasse </span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> WP2: Outdoor reconstruction </h3>
+            <p> WP2 aims at reconstructing the fine 3D geometry, texture and semantics of a city at large scale from various sensors (image/Lidar) and viewpoints (terrestrial indoor/outdoor, aerial) already registered in WP1. </p>
+			<ul>
+			<li> WP2.a Outdoor reconstruction from heterogeneous data </li>
+			<li> WP2.b Outdoor surface texturation from various viewpoints </li>
+			<li> WP2.c Outdoor surface semantization </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Coordination: Bruno Vallet, Lastig  </span>
+          </div>
+        </div>
+		
+		        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> WP3: Indoor reconstruction </h3>
+            <p> WP3 aims at preparing all indoor (textured) meshes such that these can enter into landmark recognition (WP1.d) and final joint reconstruction (WP4). A first question will be at what stage we do point meshing. We will investigate whether it is beneficial for our application to stay as long as possible with the original point cloud or whether moving to a mesh at an early stage will bear advantages. To facilitate registration, a coarse semantic classification of objects into relevant categories can be helpful at this early stage to support all later tasks. For example, a rough labeling of points (or mesh triangles) into wall, ceiling, floor, windows, furniture etc. can help precise detection of landmarks and global registration (e.g., walls should be coplanar, ceilings should be on top, floors on bottom). Another system design choice has to be made regarding registration of indoor point clouds. One may first register all indoor data based on raw point clouds [Theiler et al., 2014] and then proceed with texturing, labelling (and meshing) or, alternatively, each room (or even each scan) can be treated separately to leave all entities for global registration including outdoor data in a unified, global framework. Along this line-of-thought, we will investigate if a rough, preliminary geometric consolidation (e.g., with simplifying Manhattan world assumptions) of all (registered) indoor scans can support later landmark extraction and global registration to outdoor data. </p>
+			<ul>
+			<li> WP3.a Indoor reconstruction from low cost data </li>
+			<li> WP3.b Indoor reconstruction from fixed Lidar stations </li>
+			<li> WP3.c Indoor surface texturation </li>
+			<li> WP3.d Indoor surface semantization </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Coordination: Florent Lafarge, Titane </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> WP4: Structured combined reconstruction </h3>
+            <p> WP4 aims at the final integrated BIM modelling from both inside and outside semantized reconstructions. The output of WP4 is an automatically generated, semantically annotated, seamless indoor-outdoor, geometrically precise 3D building model. It is structured into the following subtasks: </p>
+			<ul>
+			<li> WP4.a Indoor/Outdoor object recognition and reconstruction </li>
+			<li> WP4.b Fine indoor/outdoor reconstruction </li>
+			<li> WP4.c Outdoor/indoor BIM simplification </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Coordination: Pierre Grussenmeyer, TRIO </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> WP5: Coordination and applications </h3>
+            <p> As applications will involve a strong implication of all partners, project global coordination and application specific coordination are conducted within the same work package. WP5 aims to ensure global coordination of all research effort during the life of the BIOM project, and in particular give guidance to WP1-4 work, in order to validate the results and experiment their integration with real-life issues and domain applications, frequently encountered by using BIM/GIS models in building or urban renovation projects. </p>
+			<ul>
+			<li> WP5.a Project coordination </li>
+			<li> WP5.b Adequacy to uses and data acquisition </li>
+			<li> WP5.c Ground truth </li>
+			<li> WP5.d Test use cases </li>
+			<li> WP5.e Industrial Proof of Concept </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Coordination: Sven Oesau </span>
+          </div>
+        </div>
     </section>
 
     <hr class="m-0">
@@ -143,31 +215,39 @@
         <ul class="fa-ul mb-0">
         <li>
             <i class="fa-li fa fa-check-square"></i>
-		<h5 class="lang-en"> 08/11/19: BIOM accepted </h5>
-		<h5 class="lang-fr"> 08/11/19: BIOM accepté </h5>
+		<h5 class="lang-en"> 10/17: BIOM accepted </h5>
+		<h5 class="lang-fr"> 10/17: BIOM accepté </h5>
 				<p class="lang-en"> BIOM financing is granted by the ANR </p>
 				<p class="lang-fr"> Le projet BIOM est financé par l'ANR </p>
 	 </li>
-	        <li>
+	 <li>
             <i class="fa-li fa fa-check-square"></i>
-		<h5 class="lang-en"> 06/12/19: BIOM starts </h5>
-		<h5 class="lang-fr"> 06/12/19: Début du projet BIOM </h5>
+		<h5 class="lang-en"> 01/04/18: BIOM starts </h5>
+		<h5 class="lang-fr"> 01/04/18: Début du projet BIOM </h5>
            <p class="lang-en"> Administrative start of the BIOM projet </p>
 		   <p class="lang-fr"> Début administratif du projet BIOM </p>
 	 </li>
+	 <li>
+            <i class="fa-li fa fa-check-square"></i>
+		<h5 class="lang-en"> 12/06/18: BIOM Kick Off </h5>
+           <p class="lang-en"> The kick Off meeting of the BIOM projet is held at IGN, Saint Mandé</p>
+		   <p class="lang-fr"> La réunion de lancement du projet BIOM se tient à l'IGN, Saint Mandé </p>
+	 </li>
+	 
 	<li>
-            <i class="fa-li fa fa-square"></i>
-		<h5 class="lang-en"> 17/01/20: ANR BIOM yearly project meeting at INRIA Sophia Antipolis</h5>
-		<h5 class="lang-fr"> 17/01/20: Réunion annuelle de projet ANR BIOM </h5>
+        <i class="fa-li fa fa-square"></i>
+		<h5 class="lang-en"> 17/01/20: BIOM yearly meeting </h5>
+		<h5 class="lang-fr"> 17/01/20: Réunion annuelle BIOM </h5>
 		        <p class="lang-en"> ANR BIOM yearly project meeting will be held at INRIA Sophia Antipolis </p>
 				<p class="lang-fr"> La réunion annuelle du projet BIOM se tiendra à l'INRIA Sophia Antipolis </p>
             </li>
-          <li>
-            <i class="fa-li fa fa-square"></i>
-            <h5>13-16/01/20: Raphael Sulzer </h5>
-                <p class="lang-en"> Beginning of Raphael Sulzer's PhD at Lastig, IGN</a></p>
-		<p class="lang-fr"> Début de la thèse de Raphael Sulzer au Lastig, IGN </a> </p>
-                <p>  </p> </li>
+	<li>
+        <i class="fa-li fa fa-square"></i>
+		<h5 class="lang-en"> 31/03/22: BIOM ends </h5>
+		<h5 class="lang-fr"> 31/03/22: Fin du projet BIOM </h5>
+           <p class="lang-en"> Administrative end of the BIOM projet </p>
+		   <p class="lang-fr"> Fin administrative du projet BIOM </p>
+	 </li>
         </ul>
     </section>
 
@@ -181,35 +261,100 @@
           <div class="resume-content">
             <h3 class="mb-0"> LASTIG </h3>
             <div class="subheading mb-3"> IGN France</div>
-            <p> The Lastig lab is a mixed research unit  working on geographical information sciences</p>
+            <p> The Lastig lab is a mixed research unit  working on geographical information sciences. IGN is the French reference on geographical information and was one of the first NMA (National Mapping Agency) to set up a 3D city model production in 2008, based on its research. Since then, the Lastig has had a strong activity on urban scene analysis and reconstruction, especially from mobile mapping data (both image and Lidar).</p>
+			<p> <b> Participants: </b> Bruno Vallet, Clément Mallet, Loïc Landrieu, Laurent Caraffa </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary"> Academic </span>
+            <span class="text-primary"> Saint Mandé, France </span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0"> IMAGINE </h3>
-            <div class="subheading mb-3"> ENPC, LIGM </div>
-            <p> Imagine is a research team in computer vision from the LIGM lab, depending on Ecole Nationale des Ponts et Chaussées ParisTech </p>
+            <div class="subheading mb-3"> ENPC, LIGM lab </div>
+            <p> The IMAGINE team at LIGM has been working for many years on 3D reconstruction from images and Lidar, including calibration, with an emphasis on building reconstruction and semantization, using a variety of approaches (shape grammars, MRFs, deep learning). Imagine is a research team from the LIGM lab, depending on Ecole Nationale des Ponts et Chaussées ParisTech </p>
+			<p> <b> Participants: </b> Renaud Marlet, Pascal Monasse </p>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary"> Academic </span>
+            <span class="text-primary"> Champs sur Marne, France </span>
           </div>
         </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> TRIO </h3>
+            <div class="subheading mb-3"> INSA Strasbourg, iCube lab </div>
+            <p> The TRIO team from ICube lab at INSA-Strasbourg will bring its strong experience and expertise in the reconstruction of indoor scenes in the context of as-built BIM creation </p>
+			<p> <b> Participants: </b> Pierre Grussenmeyer, Tania Landes </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Strasbourg, France </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> TITANE </h3>
+            <div class="subheading mb-3"> INRIA Sophia Antipolis </div>
+            <p> The Titane team of INRIA is one of the leading group in robust geometry processing in the world, with expertise in surface reconstruction and approximation as well as indoor reconstruction and urban modeling. </p>
+			<p> <b> Participants: </b> Florent Lafarge, Pierre Alliez </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Sophia Antipolis, France </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> MIC </h3>
+            <div class="subheading mb-3"> CSTB </div>
+            <p> The CSTB is the French reference on BIM and has initiated a collaboration with IGN on BIM/GIS (Geographical Information System) convergence for which the BIOM project could be the perfect experimental context. Its MIC team has a strong expertise in building modeling and its link with physical simulations. </p>
+			<p> <b> Participants: </b> Sven Oesau, Julien Soula, Guillaume Picinbono, Arnaud Mistre </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Sophia Antipolis, France </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> Eurometropole Strasbourg </h3>
+            <p> The project is supported by the European Metropole of Strasbourg who provides high resolution oblique aerial imagery and defined the test sites on its territory. </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Sophia Antipolis, France </span>
+          </div>
+        </div>
+		<p> The complementarity of this consortium first relies on the presence of the public actors responsible for city (IGN) and building (CSTB) modeling. From a scientific perspective, the members of the consortium cover all the methodologies required to achieve the ambitious goals: computer vision (LIGM/Imagine), photo- and laser-grammetry (IGN/MATIS, INSA/TRIO), computer graphics and geometry processing (INRIA/Titane). The consortium also covers from this methodological expertise to practical applications with the experience of INSA/TRIO on indoor structures extraction and CSTB/MIC on BIM and its usages. </p>
     </section>
 	
-	 <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="phd">
+	 <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="ressources">
       <div class="w-100">
-        <h2 class="mb-5 lang-en">PhDs</h2>
-		<h2 class="mb-5 lang-fr">Thèses</h2>
+        <h2 class="mb-5 ">Ressources</h2>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> 3D city model reconstruction from hybrid data </h3>
+            <h3 class="mb-0"> PhD: Heterogenous data registration for building modeling </h3>
             <div class="subheading mb-3"> TODO topic </div>
             <ul>
+				<li> PhD student: Rahima Djahel </li>
+				<li> Director: Pascal Monasse, Imagine  </li>
+				<li> Co-Director: Bruno Vallet, Lastig </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> 01/2019-12-2021 </span>
+          </div>
+        </div>
+		
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> PhD: Outdoor reconstruction from heterogenous data
+ </h3>
+            <div class="subheading mb-3"> TODO topic </div>
+            <ul>
+				<li> PhD student: Raphael Sulzer, Lastig </li>
 				<li> Director: Bruno Vallet, Lastig </li>
 				<li> Co-Director: Renaud Marlet, Imagine </li>
 				<li> Advisor: Sven Oesau, CSTB </li>
@@ -218,21 +363,79 @@
 			</ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary"> Raphael Sulzer </span>
+            <span class="text-primary"> 12/2018-11/2021 </span>
           </div>
         </div>
 		
-		        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0"> Hybrid data registration </h3>
+            <h3 class="mb-0"> PhD: Building modeling from low cost data </h3>
             <div class="subheading mb-3"> TODO topic </div>
             <ul>
-				<li> Director: Pascal Monasse, Imagine  </li>
-				<li> Co-Director: Bruno Vallet, Lastig </li>
+				<li> PhD student: Muxingzi Li, TITANE </li>
+				<li> Director: Florent Lafarge, TITANE  </li>
 			</ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary"> Rahima Djahel </span>
+            <span class="text-primary"> 03/2018-02-2020 </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> PhD: Building modeling from high cost data </h3>
+            <div class="subheading mb-3"> TODO topic </div>
+            <ul>
+				<li> PhD student: Rami Assi, TRIO </li>
+				<li> Director: Pierre Grussenmeyer, TRIO  </li>
+				<li> Advisor: Tania Landes, TRIO  </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> 11/2018-10-2021 </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> Engineer: BIM modeling and applications </h3>
+            <div class="subheading mb-3"> TODO topic </div>
+            <ul>
+				<li> Engineer: ??? </li>
+				<li> Supervisor: Julien Soula, CSTB  </li>
+				<li> Advisor: Guillaume Picinbono, CSTB  </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> 04/2020-10-2021 </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> Internship: Landmarks extraction for Indoor/Outdoor registration </h3>
+            <div class="subheading mb-3"> TODO topic </div>
+            <ul>
+				<li> Intern: Zoumana Malle </li>
+				<li> Supervisor: Bruno Vallet, Lastig  </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> 04/2020-10-2021 </span>
+          </div>
+        </div>
+		
+		<div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"> Internship: Water and electric pipes modeling for BIM integration </h3>
+            <div class="subheading mb-3"> TODO topic </div>
+            <ul>
+				<li> Intern: ??? </li>
+				<li> Supervisor: Florent Lafarge, TITANE  </li>
+			</ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> ??? </span>
           </div>
         </div>
     </section>
